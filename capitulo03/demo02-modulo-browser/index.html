@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Modulo em Navegadores</title>
+        <script src="./matematica.js"></script>
+        <script src="./main.js"></script>
+        <!--É importante lembrar nesse caso, que a ordem pode alterar nos fatos, dependendo do que você estiver fazendo, no nosso caso ela não vai importar porque nós estamos trabalhando a partir do onload, depois que a página carregou inteira que eu vou comçar a tomar alguma ação, que vou começar a rodar os meus scripts-->
+    </head>
+    <body>
+        <form>
+            <label for="tipoOperacao">Tipo Operação</label>
+            <select name="tipoOperacao" id="tipoOperacao">
+                <option value="dividir">Dividir</option>
+                <option value="subtrair">Subtrair</option>
+            </select>
+            <br />
+            <label for="valor1">Valor1</label> <!--Esse for serve pra quando alguém clicar no texto ele vai redirecionar o foco da tela para aquele campo-->
+            <input type="number" id="valor1">
+            <br /> 
+            <label for="valor2">Valor2</label> <!--Esse for serve pra quando alguém clicar no texto ele vai redirecionar o foco da tela para aquele campo-->
+            <input type="number" id="valor2">
+            <br /> 
+            <br /> 
+            <input type="button" value="Calcular" id="btnCalcular"> <!--Quando acontecer um clique ali nós vamos tentar capturar os valores da nossa tela pra poder fazer o nosso cálculo-->
+            <input type="reset" value="Limpar" id="btnLimpar"> <!--Quando tiver algum campo preenchido, se você clicar dentro desse botão, ele vai limpar e apagar tudo que já tem nos outros campos-->
+            <br />
+            <output id="resultado">Aqui vai o resultado!!</output><!-- A tag output é usada pra quando queremos colocar resultados, ou coisas que nós queremos imprimir após realizar algum cálculo-->
+        </form>
+    </body>
+</html>
+
+<!--Id nós usamos pra marcar esse componente ou essa linha de código como única, então nós conseguimos obter ele, alterar o texto ou alterar valores a partir desse id-->
+<!---- dividir com letra minuscula é o valor, Dividir é o título> 
